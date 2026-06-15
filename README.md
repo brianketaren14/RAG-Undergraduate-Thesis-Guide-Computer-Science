@@ -90,7 +90,7 @@ GROQ_API_KEY=your-groq-api-key
 | `MIN_SENTENCES` | `2` | Minimum kalimat per chunk |
 | `PERCENTILE_THRESH` | `80` | Breakpoint threshold (percentile) |
 | `TOP_K` | `25` | Jumlah chunks yang di-retrieve |
-| `TOP_N_RERANK` | `5` | Jumlah chunks setelah reranking |
+| `TOP_N_RERANK` | `10` | Jumlah chunks setelah reranking |
 | `GROQ_MODEL` | `meta-llama/llama-4-scout-17b-16e-instruct` | Model LLM |
 | `MAX_TOKENS_OUTPUT` | `2048` | Maksimum token output LLM |
 | `MAX_CHARS_PER_CHUNK` | `1500` | Maksimum karakter per chunk dalam context |
@@ -229,18 +229,6 @@ Answer the question and provide additional helpful information,
 based on the pieces of information, if applicable. Be succinct.
 ```
 
-## 📈 Statistik Sistem
-
-- **Total Dokumen**: 4 files
-- **Total Karakter**: ~111,650 karakter
-- **Total Chunks**: 191 chunks
-- **Rata-rata Kalimat/Chunk**: 5.8
-- **Min Kalimat/Chunk**: 2
-- **Max Kalimat/Chunk**: 44
-- **Vector Dimension**: 384
-- **Average Prompt Tokens**: ~1,199 tokens
-- **Average Completion Tokens**: ~231 tokens
-
 ## 🎓 Topik yang Bisa Dijawab
 
 Sistem dapat menjawab pertanyaan tentang:
@@ -256,16 +244,6 @@ Sistem dapat menjawab pertanyaan tentang:
 ✅ Tahapan sidang meja hijau  
 ✅ Dan topik lainnya sesuai pedoman  
 
-## 🤝 Kontribusi
-
-Kontribusi sangat terbuka! Berikut cara berkontribusi:
-
-1. Fork repository ini
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
 ## 📝 Lisensi
 
 Proyek ini dibuat untuk keperluan akademis Program Studi S-1 Ilmu Komputer, Fasilkom-TI, Universitas Sumatera Utara.
@@ -277,21 +255,5 @@ Program Studi S-1 Ilmu Komputer
 Fakultas Ilmu Komputer dan Teknologi Informasi  
 Universitas Sumatera Utara
 
-## 🙏 Acknowledgments
-
-- **Universitas Sumatera Utara** - Pedoman skripsi resmi
-- **Qdrant** - Vector database platform
-- **Groq** - LLM inference API
-- **Hugging Face** - Sentence Transformers library
-- **RAGAS** - Evaluation framework
-- **Kaggle** - Platform development & execution
-
-## 📞 Contact
-
-Untuk pertanyaan atau kolaborasi, silakan hubungi melalui:
-- GitHub Issues
-- Email: [your-email@students.usu.ac.id](mailto:your-email@students.usu.ac.id)
-
----
 
 ⭐ **Star this repo jika bermanfaat!**
